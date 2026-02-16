@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Alisha Ofae
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="Giraffe_in_profile_(4390987277).jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Alisha Ofae! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I’m the founder of a growing lifestyle brand dedicated to empowering modern professionals. With a background in finance and marketing, I combine strategy and creativity to build businesses that solve real problems. My mission is to create value, inspire confidence, and help others succeed.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/330px-Python-logo-notext.svg.png"/>
+            <h6>Python</h6>
+            <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/1280px-C_Sharp_Logo_2023.svg.png"/>
+            <h6>C#</h6>
+            <p>4 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/500px-Microsoft_logo_(2012).svg.png"/>
+            <h6>PHP</h6>
+            <p>3 years experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>SmartCamp Accommodation Management System</h3>
+            <ul>
+              <li>Designed and implemented a centralized digital system to manage camp accommodation, room allocations, and personnel tracking. The platform supports real-time occupancy monitoring, automated reporting, and both online and offline functionality to ensure operational continuity in remote locations.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Enterprise Network Infrastructure Upgrade</h3>
+            <ul>
+              <li>Led the upgrade of a mid-sized organization’s network infrastructure, including firewall deployment, VLAN configuration, and secure site-to-site VPN setup. The project improved network performance, strengthened security controls, and enhanced scalability for future growth.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Digital Workforce Attendance & Access Control System</h3>
+            <ul>
+              <li>Developed an integrated personnel management solution incorporating RFID card access and biometric verification. The system enables real-time access control, attendance tracking, and comprehensive audit reporting to improve workforce accountability and operational efficiency.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Alisha is a highly dependable and detail-oriented professional. Her ability to quickly understand complex systems and provide practical solutions makes her a valuable asset to any team. She consistently demonstrates strong problem-solving skills and a commitment to delivering high-quality results.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Alisha has always been a positive experience. She communicates clearly, supports her colleagues, and approaches every project with confidence and professionalism. Her willingness to learn and take initiative truly sets her apart.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Alisha is disciplined, proactive, and incredibly reliable. She handles responsibilities with maturity and remains calm under pressure. Any organization would benefit from her strong work ethic and dedication to continuous growth.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Your feedback has been successfully submitted. I truly appreciate you taking the time to share your thoughts.</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
